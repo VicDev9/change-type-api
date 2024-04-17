@@ -1,0 +1,10 @@
+DROP TABLE IF EXISTS TIPO_CAMBIO;
+  
+CREATE TABLE CHANGE_TYPE_LOG (
+  id_log INT AUTO_INCREMENT PRIMARY KEY,
+  monto DECIMAL(7,2) NOT NULL,
+  monto_con_tipo_de_cambio DECIMAL(7,2) NOT NULL,
+  moneda_origen VARCHAR(3) NOT NULL,
+  moneda_destino VARCHAR(3) NOT NULL,
+  tipo_cambio DECIMAL(7,2) NOT NULL
+);
